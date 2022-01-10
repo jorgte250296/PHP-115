@@ -1,0 +1,71 @@
+:root{
+    --link:#000;
+    --hover:#b00;
+    --main:#000;
+    --bg:#ffffff;
+    --size:99vmin;
+    --ratio: 1 / 1.1;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg);
+    font-family: 'Trebuchet MS';
+    color: var(--main);
+
+}
+
+a{
+    text-decoration: none;
+    color: #000; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    padding: 40px 0;
+}
+
+.intro{
+width: 100%;
+text-align: center;
+overflow: hidden;
+font-size: 1rem;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.intro-title{
+color: var(--main);
+font-size: 5rem;
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 10vmin;
+}
+
+.btn{
+display: inline-block;
+padding: 10px 20px;
+text-align: center;
+border: 1px solid #000;
+cursor: pointer;
+transition: all 300ms ease-in-out;
+
+}
+
+.btn:hover{
+background-color: #000;
+color: var(--bg);
+
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: auto;
+}

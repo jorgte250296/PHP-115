@@ -1,0 +1,28 @@
+
+# 1. Nekte tilgang til .htaccess filen.
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# 2. The following line in .htaccess will remove directory indexing and make the server respond with a 403 forbidden message.
+# Disable directory browsing
+Options -Indexes
+
+# 3. Gjemmer følgende filtyper: 
+#  .png, .zip, .jpg, .gif and .doc 
+IndexIgnore *.png *.zip *.jpg *.gif *.doc
+
+# 4. Nekt tilgang til filer med extensions .ini, .psd, .log, .sh
+<FilesMatch "\.(ini|psd|log|sh)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# 5. Nekte tilgang til filer som starter med dot(.) like .htaccess, .htpasswd, .env --etc
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+
